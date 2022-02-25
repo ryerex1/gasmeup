@@ -37,7 +37,12 @@
 	=========================================
 	
 	The app, GasMeUp, is containerized on Docker. To run it, download the zipped file in my email and extract it into any directory. 
-	Then within this directory, run the command �docker-compose -f "docker-compose.yml" up -d --build� from a command terminal. 
+	Then within this directory, run the command 
+	
+			docker-compose -f "docker-compose.yml" up -d --build
+		
+								from a command terminal. 
+	
 	This will build the application and database (I chose MySQL) necessary to retrieve gas price information. 
 	The app will now be running on http://localhost:3000
 	
@@ -73,8 +78,8 @@
 		the user can obtain results that update every time they refresh the page.
 	* When probing and inserting the gas price data into mySQL database, I manually set the refresh rate (sleep) to 5 seconds. 
 		I was aware that there was an API rate limit on EthGasStation, and after manually refreshing the page, 
-		I figured 5 seconds was approximately EthGasStation�s refresh rate as well. 
-		Also, for this reason, I didn�t want to use a Websocket and chose an API instead.
+		I figured 5 seconds was approximately EthGasStation's refresh rate as well. 
+		Also, for this reason, I didn't want to use a Websocket and chose an API instead.
 	* I chose EthGasStation over EtherScan because it seemed like EthGasStation was primarily focused on gas prices, 
 		where Etherscan was more of an entire blockchain explorer. I preferred the specialized one. However, with more time, 
 		I might look into the differences between the two or find if there's a more accurate third one to use. 
