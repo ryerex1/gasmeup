@@ -36,7 +36,8 @@
 	How to Gas Yourself Up (aka run the app):
 	=========================================
 	
-	The app, GasMeUp, is containerized on Docker. To run it, download the zipped file in my email and extract it into any directory. 
+	The app, GasMeUp, is containerized on Docker. (You'll need to have it downloaded and running before using this app.) To run it, download 
+	the zipped file in this repo and extract it into any directory. 
 	Then within this directory, run the command 
 	
 			docker-compose -f "docker-compose.yml" up -d --build
